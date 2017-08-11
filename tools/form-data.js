@@ -1,3 +1,11 @@
+//点击首页内容 跳转到相应的部分页面
+//加上对应的标记 class="box1"
+<a href="javascript:" class="mnu" onclick="jump('.box2')">使用方法</a>
+function jump(item){
+	var hei = $(item).offset().top;
+	$('html,body').animate({'scrollTop':hei},600);
+}
+
 //str to json
 strToJson: function(str) {
     var json = eval("(" + str + ")");
