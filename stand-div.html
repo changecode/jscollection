@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>横向两列布局</title>
+<style>
+	*{margin:0;padding:0;}
+	#warp{
+	    width:960px;
+	    margin:0 auto;
+	    margin-top:10px;
+	}
+	#herder{
+	    height:50px;
+	    background:blue;
+	}
+	#nav{
+	    height:30px;
+	    background:orange;
+	    margin:10px 0;
+	}
+	#main{
+	    width:100%;
+	    margin-bottom:10px;
+	    overflow:hidden;
+	}
+	#main .main-left{
+	    width:640px;
+	    height:200px;
+	    background:yellow;
+	    float:left;
+	}
+	#main .main-right{
+	    width:300px;
+	    height:200px;
+	    background:pink;
+	    float:right;
+	}
+	#content{
+	    width:100%;
+	    overflow:hidden;
+	}
+	#content .content-left{
+	    width:640px;
+	    height:800px;
+	    background:lightgreen;
+	    float:left;
+	}
+	#content .content-right-sup{
+	    width:300px;
+	    height:500px;
+	    background:lightblue;
+	    float:right;
+	}
+	#content .content-right-sub{
+	    width:300px;
+	    height:280px;
+	    background:purple;
+	    margin-top:20px;
+	    float:right;
+	}
+	#footer{
+	    height:50px;
+	    background:gray;
+	    margin-top:10px;
+	}
+</style>
+</head>
+<body>
+<div id="warp">
+    <div id="herder">页头</div>
+    <div id="nav">导航</div>
+    <div id="main">
+        <div class="main-left">左-上</div>
+        <div class="main-right">右-上</div>
+    </div>
+    <div id="content">
+        <div class="content-left">左-下</div>
+        <div class="content-right-sup">右-上</div>
+        <div class="content-right-sub">右-下</div>
+    </div>
+    <div id="footer">页脚</div>
+</div>
+</body>
+</html>
